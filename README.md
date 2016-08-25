@@ -10,12 +10,9 @@ This is designed to be run on a linux server with nodejs.
 
   `sudo-apt get install ffmpeg`
 
-
-  If you are installing on Debian Jessie run
+  If you are running on Debian Jessie install libav-tools instead of ffmepg (as ffmpeg is not availiable on Jessie)
 
   `sudo apt-get install libav-tools`
-  
-  instead of installing ffmpeg as ffmpeg is not available on Jessie
 
 ## Run Server
-  node index.js
+  `node index.js`
