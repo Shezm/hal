@@ -11,6 +11,8 @@ var YOUTUBE_KEY = 'AIzaSyDcu72rzCqjpQ1cLcQWrpllLfhLVwhUMjE';
 var GIPHY_KEY = 'dc6zaTOxFJmzC';
 var DISCORD_TOKEN = 'MjEzNzI5NDM5ODE5ODkwNjg5.Co-q1A.4pCyJbu-tuAgDDQH3kKnF3EtsKM';
 
+console.log('Server loading...');
+
 var hal = new Discord.Client();
 var tts = false;
 var jeopardy = JSON.parse(fs.readFileSync('jeopardy.json', 'utf8'));
@@ -26,7 +28,7 @@ var triviaScores = {};
 var triviaAnswer;
 var triviaValue;
 
-console.log('Server ready');
+console.log('Server ready.');
 
 hal.on('message', function(message) {
   if (message.author.username == 'hal') {
